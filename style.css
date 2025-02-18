@@ -1,0 +1,637 @@
+h1 {
+  color: white
+}
+
+h2 {
+  color: white;
+
+}
+
+h4 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+hr {
+  color: rgb(255, 123, 145);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("C:/Users/naush/OneDrive/Pictures/Screenshots/Screenshot 2025-01-12 200507.png");
+  background-size: cover;
+  /* Adjust to fit the entire screen */
+  background-repeat: no-repeat;
+  /* Prevent tiling */
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: transparent;
+  color: white;
+  min-height: auto;
+  width: 100%;
+  height: 2rem;
+  margin: 0%;
+
+}
+
+a {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 123, 145);
+}
+
+.logo {
+  font-size: 3rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.35s ease;
+  text-align: left;
+  display: block;
+
+}
+
+.logo span {
+  text-shadow: 0 0 25px;
+  color: rgb(255, 123, 145);
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+p {
+  color: white;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+h2.change {
+  color: rgb(255, 123, 145);
+  font-weight: 700;
+}
+
+.dropping-texts {
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  height: 36px;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.dropping-texts>div {
+  font-size: 1.5rem;
+  opacity: 0;
+  margin-left: -30px;
+  position: absolute;
+  font-weight: 300;
+  box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.5);
+}
+
+.dropping-texts>div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+
+.dropping-texts>div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+
+.dropping-texts>div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+
+.dropping-texts>div:nth-child(4) {
+  animation: roll2 5s linear infinite 3s;
+}
+
+@keyframes roll {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(-25deg);
+  }
+
+  3% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  20% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+
+  27% {
+    font-size: 0px;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+
+  100% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(-25deg);
+  }
+
+  3% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  30% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+
+  37% {
+    font-size: 1500px;
+    opacity: 0;
+    margin-left: -1000px;
+    margin-top: -800px;
+  }
+
+  100% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(15deg);
+  }
+}
+
+#iam-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* Adjust spacing between "I am" and animations */
+}
+
+#iam-text span {
+  color: rgb(255, 123, 145);
+  font-weight: bold;
+}
+
+
+section {
+  margin: 0%;
+  display: flex;
+  /* Makes the container a flexbox */
+  align-items: center;
+  /* Vertically centers content */
+  justify-content: space-between;
+  /* Pushes content to edges */
+  min-height: 75vh;
+  padding: 0.5rem 10%;
+  /* Adjust padding as needed */
+}
+
+section div:first-child {
+  flex: 1;
+  /* Allow content to take remaining space */
+}
+
+section div img {
+  flex: 0 0 auto;
+  /* Prevent the image from stretching */
+  align-self: flex-end;
+  /* Optional: Ensure alignment */
+  margin-left: 7rem;
+
+}
+
+section div {
+  flex: 1;
+  /* Ensures equal space distribution */
+}
+
+.photo {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: 0 0 25px rgb(255, 123, 145);
+  border: 5px solid rgb(255, 123, 145);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 0 8px 15px rgb(239, 200, 207);
+
+}
+
+.photo:hover {
+  transform: scale(1.1);
+  /* Enlarges the image slightly */
+  box-shadow: 0 0 40px rgb(255, 123, 145);
+  /* Adds a stronger glow effect */
+  border-color: white;
+  /* Changes the border color */
+}
+
+footer {
+  padding: 0%;
+  text-align: center;
+  background-color: transparent;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hyperlink-image {
+  transition: transform 0.3s, opacity 0.3s;
+  width: 40px;
+  /* Adjust size as needed */
+  height: 40px;
+  object-fit: contain;
+}
+
+.hyperlink-image:hover {
+  transform: scale(1.1);
+  /* Zoom effect */
+  opacity: 0.8;
+  /* Slight transparency */
+  filter: brightness(1.2);
+  /* Optional: add a slight glow effect */
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Title */
+.timeline-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1%;
+  margin-top: 0%;
+}
+
+/* Timeline Line */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  border-left: 2px solid rgb(255, 123, 145);
+  width: 2px;
+  height: 100%;
+}
+
+/* Timeline Event */
+.timeline-event {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.timeline-year {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 123, 145);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-event:nth-child(even) .timeline-year {
+  right: 30px;
+  /* Position year to the right for even events */
+}
+
+/* Alternate Year Positions */
+.timeline-event:nth-child(odd) .timeline-year {
+  left: 30px;
+  /* Position year to the left for odd events */
+}
+
+
+
+/* Timeline Box */
+.timeline-box {
+  position: relative;
+  background-color: #121212;
+  border: 2px solid rgb(255, 123, 145);
+  border-radius: 30px;
+  padding: 20px;
+  width: 500px;
+  margin-left: 30px;
+  /* Consistent spacing from the line */
+  box-shadow: 0 0 15px rgb(255, 123, 145);
+  transition: 0.3s;
+}
+
+.timeline-box:hover {
+  box-shadow: 0 0 30px white;
+}
+
+/* Alternating Box Position */
+.timeline-event:nth-child(odd) .timeline-box {
+  margin-left: 100px;
+  /* Adds consistent spacing for odd boxes */
+}
+
+.timeline-event:nth-child(even) .timeline-box {
+  margin-left: -650px;
+  /* Adjusted to align properly for even boxes */
+}
+
+.timeline-event::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid rgb(255, 123, 145);
+  top: 70px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.about_me_photo {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: 0 0 25px rgb(255, 123, 145);
+  border: 5px solid rgb(255, 123, 145);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 0 8px 15px rgb(239, 200, 207);
+  margin-top: 8%;
+  margin-left: 10%;
+}
+
+.about_me_photo:hover {
+  transform: scale(1.1);
+  /* Enlarges the image slightly */
+  box-shadow: 0 0 40px rgb(255, 123, 145);
+  /* Adds a stronger glow effect */
+  border-color: white;
+  /* Changes the border color */
+}
+
+
+
+.skill_container {
+  width: 50%;
+  /* Full width */
+  background-color: #ddd;
+  margin-left: 15%;
+
+  /* Grey background */
+}
+
+.skills {
+  text-align: center;
+  /* Right-align text */
+  padding-top: 10px;
+  /* Add top padding */
+  padding-bottom: 10px;
+  /* Add bottom padding */
+  color: black;
+  /* White text color */
+}
+
+.html {
+  width: 80%;
+  background-color: #CCCCFF;
+}
+
+/* Green */
+.css {
+  width: 60%;
+  background-color: #FFDB58;
+}
+
+/* Blue */
+.js {
+  width: 30%;
+  background-color: #D49185;
+}
+
+/* Red */
+.php {
+  width: 30%;
+  background-color: #99EDC3;
+}
+
+.C {
+  width: 80%;
+  background-color: #CCCCFF;
+}
+
+/* Green */
+.C_plus {
+  width: 60%;
+  background-color: #FFDB58;
+}
+
+/* Blue */
+.python {
+  width: 30%;
+  background-color: #D49185;
+}
+
+/* Red */
+.android_studio {
+  width: 30%;
+  background-color: #99EDC3;
+}
+
+/* Dark Grey */
+.D_analysis {
+  width: 50%;
+  background-color: #CCCCFF;
+}
+
+/* Green */
+.D_vis {
+  width: 70%;
+  background-color: #FFDB58;
+}
+
+/* Blue */
+.OOPs {
+  width: 70%;
+  background-color: #D49185;
+}
+
+/* Red */
+.DSA {
+  width: 60%;
+  background-color: #99EDC3;
+}
+
+.language-container {
+  width: 500px;
+  height: 350px;
+  margin-left: 30%;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  border: 4px solid #ddd;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgb(255, 123, 145);
+}
+
+.language-header {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(255, 123, 145);
+  padding-bottom: 5px;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.language-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.language-level {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}
+
+.language-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.dot.filled {
+  background-color: rgb(255, 123, 145);
+}
+
+.dot.empty {
+  background-color: white;
+}
+.project_container {
+  position: relative;
+  width: 800px; /* Increased container width */
+  height: 400px; /* Increased container height */
+  overflow: hidden;
+  border-radius: 10px;
+  background-color:transparent; /* Optional: Add background color for empty spaces */
+  display: flex; /* Center image in the container */
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+}
+
+/* Styling for images */
+.project_img {
+  max-width: 800px; /* Scale image proportionally to fit the container width */
+  max-height: 400px; /* Scale image proportionally to fit the container height */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+  border-radius: 10px;
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  margin-left: 20%;
+  width: 300px;
+  height: 320px;
+  background-color: rgb(255, 123, 145); /* Semi-transparent dark overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth fade-in effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Overlay text */
+.overlay .text {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Hover effect */
+.project_container:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
